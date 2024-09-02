@@ -1,0 +1,19 @@
+{
+  "name": "pos_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run web\" \"npm run  back\" \"npm run api\" ",
+    "web":"cd web && npm run dev",
+    "back":"cd backoffice && npm run dev",
+    "api" :"cd api && npm run dev"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
